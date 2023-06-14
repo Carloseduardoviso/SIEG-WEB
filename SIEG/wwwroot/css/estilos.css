@@ -1,0 +1,22 @@
+.plantonista-width {
+    /*min-width: 400px !important;*/
+    max-width: 300px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.day-width {
+    align-content: center;
+    text-align: center;
+    min-width: 30px !important;
+    max-width: 35px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+}
+
+#tabela td,
+#tabela th {
+    border: 1px solid black;
+}

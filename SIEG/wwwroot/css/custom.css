@@ -1,0 +1,6 @@
+#sidebar-main-menu {
+    z-index: 2 !important;
+}
+#sidebar-overlay {
+    z-index: 1 !important;
+}
