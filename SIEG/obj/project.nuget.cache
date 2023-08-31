@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TuLsuyceofMq1dxBrDOcBp7QjvcLVi7gOp2KmgCjogmC8p/GqFzwO4N4h5+ay9+MMplFeA1YGiFpvpzTVO08gw==",
+  "dgSpecHash": "2lzqm3BhrTVcS3Mxyr4Lgmwyf54vNoOiots7/XifaXAgVkU3hvHSOclYeCGEMFrzRMLzssnoQTuAbkgWBi92TQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\05035144208\\Source\\Repos\\SIEG\\SIEG\\SIEG.csproj",
+  "projectFilePath": "C:\\Users\\05035144208\\source\\repos\\SIEG\\SIEG\\SIEG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\05035144208\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\05035144208\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
