@@ -1,72 +1,118 @@
 @{
-	ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
-
-<div class="conteudo-home">
-    <div class="caixa-home">
-        <div class="relatorio-home">
-            <div class="card-home">
-                <h3>Relatórios do estoque atualizado em @DateTime.Now</h3>
-                <section>
-                    <article>
-                        <h2>Produtos cadastrados</h2>
-                        <span>0</span>
-                        <small>Produtos cadastrados</small>
-                    </article>
-                    <article>
-                        <h2>Valor atual do estoque</h2>
-                        <span>0</span>
-                        <small>Estoque Atual</small>
-                    </article>
-                    <article>
-                        <h2>Preço médio</h2>
-                        <span>0</span>
-                        <small>Preço médio dos produtos</small>
-                    </article>
-                    <article>
-                        <h2>Cliente</h2>
-                        <span>0</span>
-                        <small>Cliente cadastrados</small>
-                    </article>
-                    <article>
-                        <h2>Fornecedor</h2>
-                        <span>0</span>
-                        <small>Fornecedor cadastrados</small>
-                    </article>
-
-
-                </section>
+<div class="card-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Relatórios do estoque atualizado em @DateTime.Now</h3>
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produtos cadastrados</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Valor atual do estoque</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Preço médio</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cliente</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fornecedor</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Atenção problemas detectados</h3>
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Intes com estoque alto</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto sem saída</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Estoque baixo</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
 
-            <div class="card-home">
-                <h3>Atenção problemas detectados</h3>
-                <section>
-                    <article>
-                        <h2>Intes com estoque alto</h2>
-                        <span>0</span>
-                        <small>Produto em exesso</small>
-                    </article>
-                    <article>
-                        <h2>Produto sem saída</h2>
-                        <span>0</span>
-                        <small>Movimentação esta ruim</small>
-                    </article>
-                    <article>
-                        <h2>Estoque baixo</h2>
-                        <span>0</span>
-                        <small>Comprar agora</small>
-                    </article>
-                    <article>
-                        <h2>Itens fora da validade</h2>
-                        <span>0</span>
-                        <small>Produtos fora da validade</small>
-                    </article>
-                    <article>
-                        <h2>Versão da planilha</h2>
-                        <span>1.0</span>
-                        <small>Ver Melhorias</small>
-                    </article>
-                </section>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Itens fora da validade</h5>
+                                    <p class="card-text text-center"><span>0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Versão da planilha</h5>
+                                    <p class="card-text text-center"><span>1.0</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
             </div>
         </div>
     </div>
