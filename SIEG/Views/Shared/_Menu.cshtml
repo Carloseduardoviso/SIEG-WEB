@@ -17,7 +17,7 @@
         </a>
         <ul class="nav nav-treeview" style="display: none;">
             <li class="nav-item">
-                <a  href="" class="nav-link">
+                <a asp-controller="Produto" asp-action="Index" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Produto</p>
                 </a>
@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
+                <a asp-controller="Fornecedor" asp-action="Index" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Fornecedor</p>
                 </a>
@@ -47,19 +47,19 @@
         </a>
         <ul class="nav nav-treeview" style="display: none;">
             <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
+                <a asp-controller="Estoque" asp-action="EntradaDeProduto" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Entrada de Produto</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
+                <a asp-controller="Estoque" asp-action="SaidaDeProduto" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Saída de Produtos</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
+                <a asp-controller="Estoque" asp-action="MovimentacaoDeEstoque" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Movimentação Geral</p>
                 </a>
@@ -69,7 +69,7 @@
 </ul>
 
 <li class="nav-item my-2">
-    <a href="venda/vendas" class="nav-link">
+    <a asp-controller="Venda" asp-action="Vendas" class="nav-link">
         <i class="far fa-calendar-alt nav-icon"></i>
         <p>Venda</p>
     </a>

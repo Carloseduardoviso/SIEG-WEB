@@ -11582,11 +11582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos Eduardo\\Source\\Repos\\SIEG\\SIEG\\SIEG.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos Eduardo\\source\\repos\\SIEG\\SIEG\\SIEG.csproj",
       "projectName": "SIEG",
-      "projectPath": "C:\\Users\\Carlos Eduardo\\Source\\Repos\\SIEG\\SIEG\\SIEG.csproj",
+      "projectPath": "C:\\Users\\Carlos Eduardo\\source\\repos\\SIEG\\SIEG\\SIEG.csproj",
       "packagesPath": "C:\\Users\\Carlos Eduardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos Eduardo\\Source\\Repos\\SIEG\\SIEG\\obj\\",
+      "outputPath": "C:\\Users\\Carlos Eduardo\\source\\repos\\SIEG\\SIEG\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
