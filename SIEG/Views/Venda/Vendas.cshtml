@@ -9,51 +9,86 @@
                 <div class="base-home">
                     <div class="base-form">
                         <form action="" method="post">
-
-                            <div class="card">
-                                <h5 class="card-title ml-3 mt-2">SELECIONE UM CLIENTE</h5>
-                                <div class="card-header">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-6">
-                                                <label for="exampleFormControlInput1" class="form-label">Nome <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" aria-label="Nome" placeholder="Digite o nome do cliente">
-                                            </div>
-                                            <div class="col-sm-12 col-md-6">
-                                                <label for="exampleFormControlInput2" class="form-label">Email <span class="text-danger">*</span></label>
-                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
-                                            </div>
-                                            <div class="col-sm-12 col-md-4">
-                                                <label for="exampleFormControlInput1" class="form-label">Endereço <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" aria-label="Endereço" placeholder="Digite seu endereço">
-                                            </div>
-                                            <div class="col-sm-12 col-md-4">
-                                                <label for="exampleFormControlInput1" class="form-label">Bairro <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" aria-label="Bairro" placeholder="Digite seu bairro">
-                                            </div>
-                                            <div class="col-sm-12 col-md-4">
-                                                <label for="exampleFormControlInput1" class="form-label">cidade <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" aria-label="cidade" placeholder="Digite sua cidade">
-                                            </div>
-
-                                            <div class="col-sm-12 col-md-4">
-                                                <label for="exampleFormControlInput1" class="form-label">CEP  <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" aria-label="CEP" placeholder="Digite seu cep">
-                                            </div>
-                                            <div class="col-sm-12 col-md-4">
-                                                <label for="exampleFormControlInput1" class="form-label">UF  <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" aria-label="UF" placeholder="Digite seu estado">
-                                            </div>
-                                            <div class="col-sm-12 col-md-4">
-                                                <label for="exampleFormControlInput1" class="form-label">Celular  <span class="text-danger">*</span></label>
-                                                <input id="telefone" type="text" class="form-control" aria-label="Celular" placeholder="Digite seu celular">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-header">
+                                                    <h5 class="card-title text-center text-black">Selecione um Cliente</h5>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-sm-12 col-md-9">
+                                                        <label for="exampleFormControlInput1" class="form-label">Nome <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="Nome" placeholder="Selecione um cliente">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">CEP  <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="CEP" placeholder="00000-00">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-9">
+                                                        <label for="exampleFormControlInput2" class="form-label">Email <span class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">UF  <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="UF" placeholder="Digite seu estado">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label for="exampleFormControlInput1" class="form-label">Endereço <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="Endereço" placeholder="Digite seu endereço">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label for="exampleFormControlInput1" class="form-label">Bairro <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="Bairro" placeholder="Digite seu bairro">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label for="exampleFormControlInput1" class="form-label">cidade <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="cidade" placeholder="Digite sua cidade">
+                                                    </div>                                                   
+                                                   
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label for="exampleFormControlInput1" class="form-label">Celular  <span class="text-danger">*</span></label>
+                                                        <input id="telefone" type="text" class="form-control" aria-label="Celular" placeholder="Digite seu celular">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <input type="hidden" name="id_cliente" value="" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-header">
+                                                    <h5 class="card-title text-center text-black">Dados da venda</h5>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-sm-12 col-md-9">
+                                                        <label for="exampleFormControlInput1" class="form-label">Cliente <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="Nome" placeholder="Cliente">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">Código <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="código" placeholder="Código">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4">
+                                                        <label for="exampleFormControlInput1" class="form-label">Total <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="Total" placeholder="Informe o total">
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4">
+                                                        <label for="exampleFormControlInput1" class="form-label">Hora <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="Hora" placeholder="Digite a hora">
+                                                    </div>
 
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger me-md-2" data-bs-dismiss="modal">Cancelar</button>
-                                            <button type="button" class="btn btn-success">Concluir cadastro</button>
+                                                    <div class="col-sm-12 col-md-4">
+                                                        <label for="exampleFormControlInput1" class="form-label">Data <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" aria-label="Data" placeholder="Digite a data">
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <input type="submit" class="btn btn-primary" data-bs-dismiss="modal" value="Iniciar venda">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -61,43 +96,6 @@
                         </form>
                     </div>
                 </div>
-
-                <div class="card">
-                    <h3 class="card-title ml-3 mt-2">Dados da venda</h3>
-                    <div class="card-header">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Cliente <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" aria-label="Nome" placeholder="Digite o nome do cliente">
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Código <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" aria-label="código" placeholder="Digite o código">
-                                </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Hora <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" aria-label="Hora" placeholder="Digite a hora">
-                                </div>
-
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Total <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" aria-label="Total" placeholder="Informe o total">
-                                </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Data <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" aria-label="Data" placeholder="Digite a data">
-                                </div>
-
-                                <div class="modal-footer">
-                                    <input type="submit" class="btn btn-primary" data-bs-dismiss="modal" value="Iniciar venda">
-                                </div>
-                            </div>
-                            <input type="hidden" name="id_cliente" value="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="card">
                 <h3 class="card-title ml-3 mt-2">Itens da venda</h3>
@@ -115,71 +113,70 @@
                             <div class="col-sm-12 col-md-2">
                                 <label for="exampleFormControlInput1" class="form-label">Informe a Qtde <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" aria-label="Qtde" placeholder="Qtde">
-                            </div>                                                                   
+                            </div>
                             <div class="col-sm-12 col-md-2 mt-4">
                                 <input type="submit" class="btn btn-primary btn-sm-2 my-auto" ria-label="Salvar" value="Salvar">
                             </div>
                         </div>
 
-                        <div class="">
-                            <table class="table table-bordered table-hover table-striped table-sm align-middle" id="tabela-de-venda">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Data</th>
-                                        <th>Produto</th>
-                                        <th>Quantidade</th>
-                                        <th>Excluir</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>29/09/2016</td>
-                                        <td>Nome do produto aqui</td>
-                                        <td>1</td>
-                                        <td class="text-nowrap d-flex justify-content-center">
-                                            <a asp-controller="Venda" asp-action="Delete" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
-                                                <i class="fas fa-times"></i>
-                                            </a>
-                                        </td>
-                                    </tr>                                  
-                                     <tr>
-                                        <td>1</td>
-                                        <td>29/09/2016</td>
-                                        <td>Nome do produto aqui</td>
-                                        <td>1</td>
-                                        <td class="text-nowrap d-flex justify-content-center">
-                                            <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
-                                                <i class="fas fa-times"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>29/09/2016</td>
-                                        <td>Nome do produto aqui</td>
-                                        <td>1</td>
-                                        <td class="text-nowrap d-flex justify-content-center">
-                                            <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
-                                                <i class="fas fa-times"></i>
-                                            </a>                                          
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-warning me-md-2" data-bs-dismiss="modal">Limpar itens</button>
-                            <button type="button" class="btn btn-success">Finalizar venda</button>
-                            <button type="button" class="btn btn-danger">cancelar venda</button>
-                        </div>
+                        <table class="table table-bordered table-hover table-striped table-sm align-middle" id="tabela-de-venda">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Data</th>
+                                    <th>Produto</th>
+                                    <th>Quantidade</th>
+                                    <th>Excluir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>29/09/2016</td>
+                                    <td>Nome do produto aqui</td>
+                                    <td>1</td>
+                                    <td class="text-nowrap d-flex justify-content-center">
+                                        <a asp-controller="Venda" asp-action="Delete" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>29/09/2016</td>
+                                    <td>Nome do produto aqui</td>
+                                    <td>1</td>
+                                    <td class="text-nowrap d-flex justify-content-center">
+                                        <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>29/09/2016</td>
+                                    <td>Nome do produto aqui</td>
+                                    <td>1</td>
+                                    <td class="text-nowrap d-flex justify-content-center">
+                                        <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning me-md-2" data-bs-dismiss="modal">Limpar itens</button>
+                        <button type="button" class="btn btn-success">Finalizar venda</button>
+                        <button type="button" class="btn btn-danger">cancelar venda</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 @section Styles {
     <link href="~/lib/DataTables/datatables.css" rel="stylesheet">

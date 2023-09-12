@@ -1,48 +1,93 @@
-﻿﻿<div class="conteudo">
-	<div class="base-geral">
-		<h1 class="titulo"><span>Cadastro de produto </span></h1>
-		<div class="base-home">
-			<div class="base-form">
-				<h2>preencha os campos do cadastro abaixo</h2>
-				<form action="" method="post">
-					<div class="caixa100">
-						<div class="marcacao">
-							<h3>Dados do produto</h3>
-							<div class="separa">
-								<span>Produto</span>
-								<input type="text" name="txt_produto" value="" placeholder="Digite o nome do produto">
-							</div>
-							<div class="separa">
-								<span>Estoque Inicial</span>
-								<input type="text" name="txt_estoque_inicial" value="" placeholder="Digite o estoque inicial">
-							</div>
-							<div class="separa">
-								<span>Estoque_minimo</span>
-								<input type="text" name="txt_estoque_minimo" value="" placeholder="Digite o estoque minimo">
-							</div>
-							<div class="separa">
-								<span>Estoque_atual</span>
-								<input type="text" name="txt_estoque_atual" readonly="true" value="">
-							</div>
-							<div class="separa">
-								<span>Preço</span>
-								<input type="text" name="txt_preco" value="" placeholder="Digite o preço">
-							</div>
-							<div class="separa">
-								<span>Ativo</span>
-								<input type="text" name="txt_ativo_produto" value="" placeholder="Ativo">
-							</div>
+﻿<div class="card-body">
+    <div class="card">
+        <div class="card-header">
+            <h5>Entrada de produto</h5>
+        </div>
+        ﻿<div class="container">
+            <div class="flex-row">
+                <form method="get" action=".">                  
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-2">
+                                <label for="exampleFormControlInput1" class="form-label">Código  <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" aria-label="Codigo" placeholder="Codigo">
+                            </div>
+                            <div class="col-sm-12 col-md-5">
+                                <label for="exampleFormControlInput1" class="form-label">Produto  <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" aria-label="Produto" placeholder="Produto">
+                            </div>
+                            <div class="col-sm-12 col-md-2">
+                                <label for="exampleFormControlInput1" class="form-label">Qtde  <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" aria-label="Qtde" placeholder="Qtde">
+                            </div>
+                            <div class="col-sm-12 col-md-2 my-auto" style="height: 10px;">
+                                <button type="submit" class="btn btn-success btn-sm-2 my-auto" id="">
+                                    <em class="fas fa-check" aria-hidden="true"></em> Salvar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
 
-						</div>
-						<input type="hidden" name="id_produto" value="">
-						<div class="basse-botoes">
-							<button class="btn cancelar">cancelar</button>
-							<button class="btn finalizar">Concluir cadastro</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped table-sm align-middle" id="entrada-de-produto">
+                                <thead>
+                                    <tr>
+                                        <th width="2%" align="left">Id</th>
+                                        <th width="34%" align="center">Data</th>
+                                        <th width="23%" align="center">Produto</th>
+                                        <th width="21%" align="center">Quantidade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="left">1</td>
+                                        <td align="center">2016-09-26</td>
+                                        <td align="center">Mais um produto para teste</td>
+                                        <td align="center">15</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td align="left">1</td>
+                                        <td align="center">2016-09-26</td>
+                                        <td align="center">Mais um produto para teste</td>
+                                        <td align="center">15</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td align="left">1</td>
+                                        <td align="center">2016-09-26</td>
+                                        <td align="center">Mais um produto para teste</td>
+                                        <td align="center">15</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Styles {
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet">
+}
+
+@section Scripts {
+    <script src="~/lib/DataTables/datatables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#entrada-de-produto').DataTable({
+                responsive: false,
+                ordering: true,
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+                },
+                "lengthChange": false,
+            });
+        });
+    </script>
+}

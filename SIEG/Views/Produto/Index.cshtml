@@ -1,57 +1,111 @@
-﻿<div class="card-body">
+﻿
+<div class="card-body">
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title text-dark">Cadastro de produto</h3>
+            <form action="" method="">
+                <div class="formback">
+                    <div class="caixa01">
+                        <a asp-controller="Produto" asp-action="Create" class="btn btn-primary">Adicionar novo produto</a>
+                    </div>
+                </div>
+            </form>
         </div>
 
         ﻿<div class="container">
             <div class="flex-row">
-                <div class="base-home">
-                    <div class="base-form">
-                        <h3>Preencha os campos do cadastro abaixo</h3>
-                        <form action="" method="post">
-                            <div class="caixa100">
-                                <div class="marcacao">
-                                    <h5>Dado do produto</h5>
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-4">
-                                            <label for="exampleFormControlInput1" class="form-label">Produto <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" aria-label="Produto" placeholder="Digite o nome do produto">
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                            <label for="exampleFormControlInput2" class="form-label">Estoque Inicial <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite o estoque inicial">
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                            <label for="exampleFormControlInput1" class="form-label">Estoque_minimo <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" aria-label="Estoque_minimo" placeholder="Digite o estoque minimo">
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                            <label for="exampleFormControlInput1" class="form-label">Estoque_atual <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" aria-label="Estoque_atual" readonly="readonly">
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                            <label for="exampleFormControlInput1" class="form-label">Preço <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" aria-label="Preço" placeholder="Digite o preço">
-                                        </div>
+                <table class="table table-bordered table-hover table-striped table-sm align-middle" id="produto">
+                    <thead>
+                        <tr>
+                            <th width="2%" align="left">Id</th>
+                            <th width="34%" align="center">Produto</th>
+                            <th width="23%" align="center">Estoque</th>
+                            <th width="21%" align="center">Ativo</th>
+                            <th width="20%" align="center">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="left">1</td>
+                            <td align="left">Primeiro Produto</td>
+                            <td align="center">101</td>
+                            <td align="center"><i class="ativo"></i>sim</td>
+                            <td class="text-nowrap d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
+                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
+                                </button>
+                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                    <i class="fa-solid fa-pen-to-square"></i>Excluir
+                                </button>
+                            </td>
+                        </tr>
 
-                                        <div class="col-sm-12 col-md-4">
-                                            <label for="exampleFormControlInput1" class="form-label">Ativo  <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" aria-label="Ativo" placeholder="Ativo">
-                                        </div>                                        
-                                    </div>
-                                    <input type="hidden" name="id_cliente" value="" />
+                        <tr>
+                            <td align="left">1</td>
+                            <td align="left">Primeiro Produto</td>
+                            <td align="center">101</td>
+                            <td align="center"><i class="ativo"></i>sim</td>
+                            <td class="text-nowrap d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
+                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
+                                </button>
+                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                    <i class="fa-solid fa-pen-to-square"></i>Excluir
+                                </button>
+                            </td>
+                        </tr>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger me-md-2" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-success">Concluir cadastro</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                        <tr>
+                            <td align="left">1</td>
+                            <td align="left">Primeiro Produto</td>
+                            <td align="center">101</td>
+                            <td align="center"><i class="ativo"></i>sim</td>
+                            <td class="text-nowrap d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
+                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
+                                </button>
+                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                    <i class="fa-solid fa-pen-to-square"></i>Excluir
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="left">1</td>
+                            <td align="left">Primeiro Produto</td>
+                            <td align="center">101</td>
+                            <td align="center"><i class="ativo"></i>sim</td>
+                            <td class="text-nowrap d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
+                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
+                                </button>
+                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                    <i class="fa-solid fa-pen-to-square"></i>Excluir
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
+
+@section Styles {
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet">
+}
+
+@section Scripts {
+    <script src="~/lib/DataTables/datatables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#produto').DataTable({
+                responsive: false,
+                ordering: true,
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+                },
+                "lengthChange": false,
+            });
+        });
+    </script>
+}
