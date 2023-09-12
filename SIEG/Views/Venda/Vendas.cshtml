@@ -45,8 +45,8 @@
                                                     <div class="col-sm-12 col-md-6">
                                                         <label for="exampleFormControlInput1" class="form-label">cidade <span class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" aria-label="cidade" placeholder="Digite sua cidade">
-                                                    </div>                                                   
-                                                   
+                                                    </div>
+
                                                     <div class="col-sm-12 col-md-6">
                                                         <label for="exampleFormControlInput1" class="form-label">Celular  <span class="text-danger">*</span></label>
                                                         <input id="telefone" type="text" class="form-control" aria-label="Celular" placeholder="Digite seu celular">
@@ -97,103 +97,111 @@
                     </div>
                 </div>
 
-            <div class="card">
-                <h3 class="card-title ml-3 mt-2">Itens da venda</h3>
-                <div class="card-header">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-2">
-                                <label for="exampleFormControlInput1" class="form-label">Informe o Código <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" aria-label="Código" placeholder="Código">
+                <div class="card">
+                    <h3 class="card-title ml-3 mt-2">Itens da venda</h3>
+                    <div class="card-header">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="exampleFormControlInput1" class="form-label">Informe o Código <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" aria-label="Código" placeholder="Código">
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Informe o produto <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" aria-label="Produto" placeholder="Produto">
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="exampleFormControlInput1" class="form-label">Informe a Qtde <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" aria-label="Qtde" placeholder="Qtde">
+                                </div>
+                                <div class="col-sm-12 col-md-2 my-auto" style="height: 10px;">
+                                    <button type="submit" class="btn btn-success btn-sm-2 my-auto" id="">
+                                        <em class="fas fa-check" aria-hidden="true"></em> Salvar
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col-sm-12 col-md-4">
-                                <label for="exampleFormControlInput1" class="form-label">Informe o produto <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" aria-label="Produto" placeholder="Produto">
-                            </div>
-                            <div class="col-sm-12 col-md-2">
-                                <label for="exampleFormControlInput1" class="form-label">Informe a Qtde <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" aria-label="Qtde" placeholder="Qtde">
-                            </div>
-                            <div class="col-sm-12 col-md-2 mt-4">
-                                <input type="submit" class="btn btn-primary btn-sm-2 my-auto" ria-label="Salvar" value="Salvar">
-                            </div>
-                        </div>
 
-                        <table class="table table-bordered table-hover table-striped table-sm align-middle" id="tabela-de-venda">
-                            <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>Data</th>
-                                    <th>Produto</th>
-                                    <th>Quantidade</th>
-                                    <th>Excluir</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>29/09/2016</td>
-                                    <td>Nome do produto aqui</td>
-                                    <td>1</td>
-                                    <td class="text-nowrap d-flex justify-content-center">
-                                        <a asp-controller="Venda" asp-action="Delete" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
-                                            <i class="fas fa-times"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>29/09/2016</td>
-                                    <td>Nome do produto aqui</td>
-                                    <td>1</td>
-                                    <td class="text-nowrap d-flex justify-content-center">
-                                        <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
-                                            <i class="fas fa-times"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>29/09/2016</td>
-                                    <td>Nome do produto aqui</td>
-                                    <td>1</td>
-                                    <td class="text-nowrap d-flex justify-content-center">
-                                        <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
-                                            <i class="fas fa-times"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning me-md-2" data-bs-dismiss="modal">Limpar itens</button>
-                        <button type="button" class="btn btn-success">Finalizar venda</button>
-                        <button type="button" class="btn btn-danger">cancelar venda</button>
+                            <table class="table table-bordered table-hover table-striped table-sm align-middle" id="tabela-de-venda">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Data</th>
+                                        <th>Produto</th>
+                                        <th>Quantidade</th>
+                                        <th>Excluir</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>29/09/2016</td>
+                                        <td>Nome do produto aqui</td>
+                                        <td>1</td>
+                                        <td class="text-nowrap d-flex justify-content-center">
+                                            <a asp-controller="Venda" asp-action="Delete" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>29/09/2016</td>
+                                        <td>Nome do produto aqui</td>
+                                        <td>1</td>
+                                        <td class="text-nowrap d-flex justify-content-center">
+                                            <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>29/09/2016</td>
+                                        <td>Nome do produto aqui</td>
+                                        <td>1</td>
+                                        <td class="text-nowrap d-flex justify-content-center">
+                                            <a href="" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Essa ação vai excluir">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-warning btn-sm-2 my-auto" id="" data-bs-dismiss="modal">                                
+                                <em class="fas fa-broom" aria-hidden="true"></em> Limpar itens
+                            </button>
+                            <button type="submit" class="btn btn-success btn-sm-2 my-auto" id="">
+                                <em class="fas fa-check" aria-hidden="true"></em> Finalizar venda
+                            </button>
+                            <button type="submit" class="btn btn-danger btn-sm-2 my-auto" id="">
+                                <em class="fas fa-times" aria-hidden="true"></em> Cancelar venda
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
-@section Styles {
-    <link href="~/lib/DataTables/datatables.css" rel="stylesheet">
-}
+    @section Styles {
+        <link href="~/lib/DataTables/datatables.css" rel="stylesheet">
+    }
 
-@section Scripts {
-    <script src="~/lib/DataTables/datatables.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#tabela-de-venda').DataTable({
-                responsive: false,
-                ordering: true,
-                language: {
-                    url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
-                },
-                "lengthChange": false,
+    @section Scripts {
+        <script src="~/lib/DataTables/datatables.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#tabela-de-venda').DataTable({
+                    responsive: false,
+                    ordering: true,
+                    language: {
+                        url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+                    },
+                    "lengthChange": false,
+                });
             });
-        });
-    </script>
-}
+        </script>
+    }
