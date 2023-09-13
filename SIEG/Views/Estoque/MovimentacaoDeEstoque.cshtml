@@ -1,1 +1,115 @@
-﻿<p>TESTE</p>
+﻿@using System.Globalization;
+
+<div class="flex-row">
+    <div class="col-12 pt-3">
+        <div class="card card-default">
+            <div class="card-header" style="background-color: #ddd">
+                <h4 class="card-title"><i class="far fa-calendar-alt nav-icon"></i>  Movimentação disponíveis</h4>
+            </div>
+            <form method="post" id="form">
+                <div class="container ml-0">
+                    <div class="card-body px-2" style="padding: 1rem 2rem 0 1rem !important">
+                        <div class="form-group row">
+                            <div class="form-group col-sm-12 col-md-4">
+                                <label for="ano">Selecione o mês</label>
+                                <select id="mes" name="mes" class="form-control select2bs4">
+                                    @for (int i = 1; i <= 12; i++)
+                                    {
+                                        string monthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).ToUpper().Substring(0, 1) + CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(1);
+                                        if (i == DateTime.Now.Month)
+                                        {
+                                            <option value="@i" selected>@monthName</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@i">@monthName</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-12 col-md-4">
+                                <label for="ano">Selecione o ano</label>
+                                <select type="text" id="ano" name="ano" class="form-control select2bs4">
+                                    @for (int i = DateTime.Now.Year; i >= 2013; i--)
+                                    {
+                                        <option value="@i">@i</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-12 col-md-2 my-auto" style="height: 25px;">
+                                <button type="submit" class="btn btn-secondary btn-sm-2 my-auto" id="carregarConteudo">
+                                    <em class="fas fa-search" aria-hidden="true"></em> Filtrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12" id="conteudo"></div>
+            </form>
+
+            ﻿<div class="container">
+                <div class="flex-row">
+                    <table class="table table-bordered table-hover table-striped table-sm align-middle" id="saida-de-produto">
+                        <thead>
+                            <tr>
+                                <th width="2%" align="left">Código</th>
+                                <th width="2%" align="left">Produto</th>
+                                <th width="23%" align="center">Entrada Qtde</th>
+                                <th width="23%" align="center">Saida Qtde</th>
+                                <th width="21%" align="center">Entrada Preço</th>
+                                <th width="21%" align="center">Saida Preço</th>
+                                <th width="21%" align="center"> Data entrada</th>
+                                <th width="21%" align="center"> Data Saida</th>
+                                <th width="20%" align="center">Ativo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="left">1</td>
+                                <td align="left">SSD</td>
+                                <td align="left">25</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">S</td>
+                            </tr>
+                            <tr>
+                                <td align="left">1</td>
+                                <td align="left">SSD</td>
+                                <td align="left">25</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">40 R$</td>
+                                <td align="center">S</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet">
+    }
+
+@section Scripts {
+    <script src="~/lib/DataTables/datatables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#saida-de-produto').DataTable({
+                responsive: false,
+                ordering: true,
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+                },
+                "lengthChange": false,
+            });
+        });
+    </script>
+    }

@@ -169,7 +169,7 @@
                             </table>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-warning btn-sm-2 my-auto" id="" data-bs-dismiss="modal">                                
+                            <button type="submit" class="btn btn-warning btn-sm-2 my-auto" id="" data-bs-dismiss="modal">
                                 <em class="fas fa-broom" aria-hidden="true"></em> Limpar itens
                             </button>
                             <button type="submit" class="btn btn-success btn-sm-2 my-auto" id="">
@@ -184,24 +184,24 @@
             </div>
         </div>
     </div>
+</div>
 
-
-    @section Styles {
-        <link href="~/lib/DataTables/datatables.css" rel="stylesheet">
+@section Styles {
+    <link href="~/lib/DataTables/datatables.css" rel="stylesheet">
     }
 
-    @section Scripts {
-        <script src="~/lib/DataTables/datatables.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#tabela-de-venda').DataTable({
-                    responsive: false,
-                    ordering: true,
-                    language: {
-                        url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
-                    },
-                    "lengthChange": false,
-                });
+@section Scripts {
+    <script src="~/lib/DataTables/datatables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tabela-de-venda').DataTable({
+                responsive: false,
+                ordering: true,
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json',
+                },
+                "lengthChange": false,
             });
-        </script>
+        });
+    </script>
     }
