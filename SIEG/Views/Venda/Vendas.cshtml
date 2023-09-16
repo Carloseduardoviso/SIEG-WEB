@@ -19,7 +19,7 @@
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col-sm-12 col-md-12">
-                                                        <label for="exampleFormControlInput1" class="form-label">Nome <span class="text-danger">*</span></label>
+                                                        <label for="exampleFormControlInput1" class="form-label">Nome do cliente<span class="text-danger">*</span></label>
                                                         <input type="text" class="form-control" aria-label="Nome" placeholder="Selecione um cliente">
                                                     </div>
                                                 </div>
@@ -46,15 +46,15 @@
                                                 <div class="form-row">
                                                     <div class="col-sm-12 col-md-12">
                                                         <label for="exampleFormControlInput1" class="form-label">Cliente <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" aria-label="Nome" placeholder="Cliente">
+                                                        <input type="text" class="form-control" aria-label="Nome" placeholder="Cliente" readonly>
                                                     </div>
                                                     <div class="col-sm-12 col-md-6">
                                                         <label for="exampleFormControlInput1" class="form-label">Código <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" aria-label="código" placeholder="Código">
+                                                        <input type="text" class="form-control" aria-label="código" placeholder="Código" readonly>
                                                     </div>
                                                     <div class="col-sm-12 col-md-6">
                                                         <label for="exampleFormControlInput1" class="form-label">Hora <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" aria-label="Hora" placeholder="Digite a hora">
+                                                        <input type="text" class="form-control" aria-label="Hora" placeholder="@DateTime.Now.ToString("T")" readonly>
                                                     </div>
                                                     <div class="col-sm-12 col-md-6">
                                                         <label for="exampleFormControlInput1" class="form-label">Total <span class="text-danger">*</span></label>
@@ -62,7 +62,7 @@
                                                     </div>
                                                     <div class="col-sm-12 col-md-6">
                                                         <label for="exampleFormControlInput1" class="form-label">Data <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" aria-label="Data" placeholder="Digite a data">
+                                                        <input type="text" class="form-control" aria-label="Data" placeholder="@DateTime.Now.ToString("d")" readonly>
                                                     </div>
 
                                                     <div class="col-sm-12 col-md-4 mt-3">
