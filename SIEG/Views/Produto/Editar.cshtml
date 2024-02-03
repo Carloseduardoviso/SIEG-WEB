@@ -1,0 +1,68 @@
+﻿@model SIEG.Models.ProdutoModel
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<div class="card-body">
+    <div class="card">
+        <div class="card-header" style="background-color: #ddd">
+            <h4 class="card-title"> Editar Produto</h4>
+        </div>
+        ﻿<div class="container">
+            <div class="flex-row">
+                <div class="base-home">
+                    <div class="base-form">
+                        <form action="" method="post">
+                            <div class="marcacao">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Produto <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" aria-label="Produto" placeholder="Digite o nome do produto">
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <label for="exampleFormControlInput2" class="form-label">Estoque Inicial <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite o estoque inicial">
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Estoque Minimo <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" aria-label="Estoque_minimo" placeholder="Digite o estoque minimo">
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Estoque Atual <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" aria-label="Estoque_atual" readonly="readonly">
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Preço <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" aria-label="Preço" placeholder="Digite o preço">
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Ativo  <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" aria-label="Ativo" placeholder="Ativo">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="form-group">
+                                        <a class="btn btn-danger" asp-action="index">
+                                            <em class="fas fa-times" aria-hidden="true"></em> Cancelar
+                                        </a>
+                                        <button type="submit" class="btn btn-success btn-sm-2 my-auto" id="" data-bs-dismiss="modal">
+                                            <em class="fas fa-check" aria-hidden="true"></em> Salvar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

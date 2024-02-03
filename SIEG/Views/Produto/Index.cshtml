@@ -6,7 +6,7 @@
             <form action="" method="">
                 <div class="formback">
                     <div class="caixa01">
-                        <a asp-controller="Produto" asp-action="Create" class="btn btn-primary">Adicionar novo produto</a>
+                        <a asp-controller="Produto" asp-action="Criar" class="btn btn-primary">Adicionar produto</a>
                     </div>
                 </div>
             </form>
@@ -27,60 +27,15 @@
                         <tr>
                             <td align="left">1</td>
                             <td align="left">Primeiro Produto</td>
-                            <td align="center">101</td>
-                            <td align="center"><i class="ativo"></i>sim</td>
-                            <td class="text-nowrap d-flex justify-content-center">
-                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
-                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
-                                </button>
-                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
-                                    <i class="fa-solid fa-pen-to-square"></i>Excluir
-                                </button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td align="left">1</td>
-                            <td align="left">Segundo Produto</td>
-                            <td align="center">101</td>
-                            <td align="center"><i class="ativo"></i>sim</td>
-                            <td class="text-nowrap d-flex justify-content-center">
-                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
-                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
-                                </button>
-                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
-                                    <i class="fa-solid fa-pen-to-square"></i>Excluir
-                                </button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td align="left">1</td>
-                            <td align="left">Primeiro Produto</td>
-                            <td align="center">10</td>
-                            <td align="center"><i class="ativo"></i>Não</td>
-                            <td class="text-nowrap d-flex justify-content-center">
-                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
-                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
-                                </button>
-                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
-                                    <i class="fa-solid fa-pen-to-square"></i>Excluir
-                                </button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td align="left">1</td>
-                            <td align="left">Primeiro Produto</td>
                             <td align="center">103</td>
                             <td align="center"><i class="ativo"></i>sim</td>
                             <td class="text-nowrap d-flex justify-content-center">
-                                <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
-                                    <i class="fas fa-solid fa-pen-to-square"></i>Editar
-                                </button>
-                                <button type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                <a asp-action="Editar" asp-controller="Produto" type="button" class="bbtn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                    <i class="fa-solid fa-pen-to-square"></i>Editar
+                                </a>
+                                <a class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
                                     <i class="fa-solid fa-pen-to-square"></i>Excluir
-                                </button>
+                                </a>
                             </td>
                         </tr>
                     </tbody>

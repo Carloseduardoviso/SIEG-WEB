@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "xfj202JPTkWQv60XX3P8zT/iuzEoYu26wKWuAOg1mxQ91cUQfiCwhvJsXrKvv5mMnRftVscQfXGrkdCmX9KFGA==",
-  "success": false,
+  "dgSpecHash": "vnzROfcmSBdVyL3TumgOXa+EridZ7Dt54MzXBTOCQXtbQxLDWtJ1SPbRcrSsbT3dS6CjQtsYNH56jTZfk4Pi3Q==",
+  "success": true,
   "projectFilePath": "C:\\Users\\Carlos Eduardo\\source\\repos\\SIEG\\Teste\\Teste.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos Eduardo\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
@@ -100,72 +100,5 @@
     "C:\\Users\\Carlos Eduardo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Carlos Eduardo\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'Microsoft.TestPlatform.TestHost' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='Microsoft.TestPlatform.TestHost'&semVerLevel=2.0.0'.",
-      "libraryId": "Microsoft.TestPlatform.TestHost"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'Microsoft.TestPlatform.ObjectModel' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='Microsoft.TestPlatform.ObjectModel'&semVerLevel=2.0.0'.",
-      "libraryId": "Microsoft.TestPlatform.ObjectModel"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'Microsoft.TestPlatform.TestHost' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='Microsoft.TestPlatform.TestHost'&semVerLevel=2.0.0'.",
-      "libraryId": "Microsoft.TestPlatform.TestHost"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'MSTest.TestFramework' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='MSTest.TestFramework'&semVerLevel=2.0.0'.",
-      "libraryId": "MSTest.TestFramework"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'Microsoft.TestPlatform.ObjectModel' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='Microsoft.TestPlatform.ObjectModel'&semVerLevel=2.0.0'.",
-      "libraryId": "Microsoft.TestPlatform.ObjectModel"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'MSTest.TestFramework' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='MSTest.TestFramework'&semVerLevel=2.0.0'.",
-      "libraryId": "MSTest.TestFramework"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'Newtonsoft.Json' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='Newtonsoft.Json'&semVerLevel=2.0.0'.",
-      "libraryId": "Newtonsoft.Json"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'MSTest.TestAdapter' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='MSTest.TestAdapter'&semVerLevel=2.0.0'.",
-      "libraryId": "MSTest.TestAdapter"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'MSTest.TestAdapter' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='MSTest.TestAdapter'&semVerLevel=2.0.0'.",
-      "libraryId": "MSTest.TestAdapter"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'Microsoft.CodeCoverage' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='Microsoft.CodeCoverage'&semVerLevel=2.0.0'.",
-      "libraryId": "Microsoft.CodeCoverage"
-    },
-    {
-      "code": "NU1301",
-      "level": "Error",
-      "message": "Falha ao recuperar informações sobre 'Microsoft.CodeCoverage' da origem remota 'https://nuget.okd.local/repository/nuget-hosted/FindPackagesById()?id='Microsoft.CodeCoverage'&semVerLevel=2.0.0'.",
-      "libraryId": "Microsoft.CodeCoverage"
-    }
-  ]
+  "logs": []
 }

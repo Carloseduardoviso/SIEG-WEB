@@ -8,9 +8,13 @@ namespace SIEG.Controllers
         {
             return View();
         }
-        public IActionResult Create()
+        public IActionResult Criar()
         {
             return View();
         }
+        public IActionResult Editar()
+        {
+            return View();
+        }       
     }
 }

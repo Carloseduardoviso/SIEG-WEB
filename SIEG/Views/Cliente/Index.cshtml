@@ -6,7 +6,7 @@
             <form action="" method="">
                 <div class="formback">
                     <div class="caixa01">
-                        <a asp-controller="Cliente" asp-action="Create" class="btn btn-primary">Adicionar novo cliente</a>
+                        <a asp-controller="Cliente" asp-action="Criar" class="btn btn-primary">Adicionar novo cliente</a>
                     </div>
                 </div>
             </form>
@@ -33,7 +33,10 @@
                                 <button type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Edita">
                                     <i class="fas fa-solid fa-pen-to-square"></i>Editar
                                 </button>
-                                <a asp-action="Delete" asp-controller="Fornecedor" type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                <a asp-action="Editar" asp-controller="Cliente" type="button" class="btn btn-sm btn-primary mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
+                                    <i class="fa-solid fa-pen-to-square"></i>Editar
+                                </a>
+                                <a asp-action="Delete" asp-controller="Cliente" type="button" class="btn btn-sm btn-danger mr-2" data-html="true" data-toggle="tooltip" data-placement="top" title="Excluir">
                                     <i class="fa-solid fa-pen-to-square"></i>Excluir
                                 </a>
                             </td>
