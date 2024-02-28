@@ -11,7 +11,7 @@ namespace SIEG.Models
         [MaxLength(100, ErrorMessage = "Esse campo deve ter ate 100 caracteres.")]
         public string? Nome { get; set; }
 
-        public Sexo Sexo { get; set; }
+        public TipoDeSexo Sexo { get; set; }
 
         [Required(ErrorMessage = "Esse campo deve ser preenchido")]
         [StringLength(14, ErrorMessage = "Esse campo deve ter 14 caracteres com pontos e traco.")]
@@ -51,6 +51,6 @@ namespace SIEG.Models
         public string? Estado { get; set; }
 
         [Display(Name = "Estado civil")]
-        public EstadoCivil EstadoCivil { get; set; }
+        public TipoDeEstadoCivil TipoDeEstadoCivil { get; set; }
     }
 }
